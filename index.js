@@ -11,4 +11,5 @@ bot.command(['/start', '/info'], ctx => ctx.reply(`Your name is ${ctx?.session?.
 bot.command('/name', ctx => ctx.scene.enter('nameScene'));
 bot.command('/age', ctx => ctx.scene.enter('ageScene'));
 
+
 bot.launch().then(() => console.log('Bot launched!'));
